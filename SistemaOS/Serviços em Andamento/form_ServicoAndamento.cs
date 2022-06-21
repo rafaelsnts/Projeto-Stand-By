@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaOS.Banco_Global;
+using SistemaOS.Clientes;
 using SistemaOS.Serviços;
 
 namespace SistemaOS.Serviços_em_Andamento
@@ -19,8 +20,22 @@ namespace SistemaOS.Serviços_em_Andamento
         public form_ServicoAndamento()
         {
             InitializeComponent();
+            BancoGlobalStatico.carregarClientes();
             BancoGlobalStatico.carregarServicosAndamento();
             carregarTabelaServicosAndamento();
+        }
+
+        public string BuscarNomeCliente(int id)
+        {
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            {
+                if (cliente.sv_Id == id)
+                {
+                    return cliente.sv_Nome;
+                }
+            }
+
+            return "";
         }
 
         public void carregarTabelaServicosAndamento()
@@ -43,7 +58,7 @@ namespace SistemaOS.Serviços_em_Andamento
 
             foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.bancoServicosAndamento)
             {
-                dt.Rows.Add(servicoAndamento.sv_Id, servicoAndamento.sv_fk_cl_idCliente, servicoAndamento.sv_Aparelho,
+                dt.Rows.Add(servicoAndamento.sv_Id, BuscarNomeCliente(servicoAndamento.sv_fk_cl_idCliente), servicoAndamento.sv_Aparelho,
                     servicoAndamento.sv_Defeito, servicoAndamento.sv_Senha, servicoAndamento.sv_Situacao,
                     servicoAndamento.sv_Acessorios, servicoAndamento.sv_dataCadastro.ToShortDateString(),
                     servicoAndamento.sv_dataConclusao.ToShortDateString(), string.Format("{0:0.00}", servicoAndamento.sv_valorServico),
@@ -74,7 +89,7 @@ namespace SistemaOS.Serviços_em_Andamento
 
             foreach (ServicosAdamentoEstrutura servicoAndamento in _servicosAdamento)
             {
-                dt.Rows.Add(servicoAndamento.sv_Id, servicoAndamento.sv_fk_cl_idCliente, servicoAndamento.sv_Aparelho,
+                dt.Rows.Add(servicoAndamento.sv_Id, BuscarNomeCliente(servicoAndamento.sv_fk_cl_idCliente), servicoAndamento.sv_Aparelho,
                     servicoAndamento.sv_Defeito, servicoAndamento.sv_Senha, servicoAndamento.sv_Situacao,
                     servicoAndamento.sv_Acessorios, servicoAndamento.sv_dataCadastro.ToShortDateString(),
                     servicoAndamento.sv_dataConclusao.ToShortDateString(), string.Format("{0:0.00}", servicoAndamento.sv_valorServico),

@@ -143,6 +143,16 @@ namespace SistemaOS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cell_phone_35px {
+            get {
+                object obj = ResourceManager.GetObject("cell_phone_35px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap checkmark_100px {
             get {
                 object obj = ResourceManager.GetObject("checkmark_100px", resourceCulture);
@@ -213,6 +223,16 @@ namespace SistemaOS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap contact_35px {
+            get {
+                object obj = ResourceManager.GetObject("contact_35px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap customer_20px {
             get {
                 object obj = ResourceManager.GetObject("customer_20px", resourceCulture);
@@ -226,6 +246,26 @@ namespace SistemaOS.Properties {
         internal static System.Drawing.Bitmap customer_20px1 {
             get {
                 object obj = ResourceManager.GetObject("customer_20px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap documents_35px {
+            get {
+                object obj = ResourceManager.GetObject("documents_35px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dog_tag_35px {
+            get {
+                object obj = ResourceManager.GetObject("dog_tag_35px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -636,6 +676,16 @@ namespace SistemaOS.Properties {
         internal static System.Drawing.Bitmap task_completed_100px {
             get {
                 object obj = ResourceManager.GetObject("task_completed_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telephone_35px {
+            get {
+                object obj = ResourceManager.GetObject("telephone_35px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

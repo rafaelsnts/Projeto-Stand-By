@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaOS.Banco_Global;
+using SistemaOS.Clientes;
 
 namespace SistemaOS.Serviços_em_Andamento
 {
@@ -16,6 +17,8 @@ namespace SistemaOS.Serviços_em_Andamento
         public form_CadastrarServico()
         {
             InitializeComponent();
+            BancoGlobalStatico.carregarClientes();
+            carregarComboboxClientes();
             txt_DataCadastro.Text = DateTime.Now.ToShortDateString();
             txt_DataConclusao.Text = DateTime.Now.ToShortDateString();
         }
@@ -41,7 +44,15 @@ namespace SistemaOS.Serviços_em_Andamento
             this.Close();
         }
 
-        private void LimparTelaCadastroServico()
+        private void carregarComboboxClientes()
+        {
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            {
+                cmb_IdCliente.Items.Add(cliente.sv_Nome);
+            }
+        }
+
+        private void limparTelaCadastroServico()
         {
             txt_Id.Text = "";
             txt_IdCliente.Text = "";
@@ -77,11 +88,24 @@ namespace SistemaOS.Serviços_em_Andamento
             return new decimal[] { valorServico, valorPeça };
         }
 
+        private int BuscarIdCliente()
+        {
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            {
+                if (cliente.sv_Nome == cmb_IdCliente.Text)
+                {
+                    return cliente.sv_Id;
+                }
+            }
+
+            return Convert.ToInt32(txt_Id.Text);
+        }
+
         private void CadastrarServico(decimal lucro, decimal valorPeca, decimal valorServico)
         {
             int status = 1;
             BancoGlobalStatico.bancoServicosAndamento.Add(new ServicosAdamentoEstrutura(BancoGlobalStatico.idGlobalServicosAndamento,
-                BancoGlobalStatico.idGlobalIdCliente, txt_Aparelho.Text, txt_Defeito.Text, txt_Senha.Text, txt_Situacao.Text,
+               Convert.ToInt32(BuscarIdCliente()), txt_Aparelho.Text, txt_Defeito.Text, txt_Senha.Text, txt_Situacao.Text,
                 txt_Acessorios.Text, Convert.ToDateTime(txt_DataCadastro.Text),
                 Convert.ToDateTime(txt_DataConclusao.Text), valorServico,
                 valorPeca, lucro,
@@ -93,7 +117,7 @@ namespace SistemaOS.Serviços_em_Andamento
             try
             {
                 decimal lucro = VerificarValorServicoEPeca()[0] - VerificarValorServicoEPeca()[1];
-                if (txt_Aparelho.Text == "" || txt_Defeito.Text == "")
+                if (txt_Aparelho.Text == "" || txt_Defeito.Text == "" || cmb_IdCliente.SelectedItem.ToString() == null)
                 {
                     MessageBox.Show("Preencha todos os campos Obrigatórios");
                 }
@@ -106,7 +130,7 @@ namespace SistemaOS.Serviços_em_Andamento
                     BancoGlobalStatico.idGlobalServicosAndamento++;
                     BancoGlobalStatico.carregarServicosAndamento();
                     MessageBox.Show("Serviço Cadastrado");
-                    LimparTelaCadastroServico();
+                    limparTelaCadastroServico();
                 }
             }
             catch (Exception exception)

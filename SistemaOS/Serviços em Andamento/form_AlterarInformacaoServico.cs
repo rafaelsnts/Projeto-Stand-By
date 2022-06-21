@@ -114,5 +114,21 @@ namespace SistemaOS.Serviços
                 Data.SelectionStart = Data.Text.Length + 1;
             }
         }
+
+        private void txt_ValorServico_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 44 && e.KeyChar != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_ValorDaPeca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 44 && e.KeyChar != 46)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

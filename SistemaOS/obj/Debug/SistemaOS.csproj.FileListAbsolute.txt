@@ -26,3 +26,26 @@ C:\Users\Rafael Santos\source\repos\SistemaOS\SistemaOS\bin\Debug\Bunifu.UI.WinF
 C:\Users\Rafael Santos\source\repos\SistemaOS\SistemaOS\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
 C:\Users\Rafael Santos\source\repos\SistemaOS\SistemaOS\obj\Debug\SistemaOS.Serviços.form_AlterarInformacaoServico.resources
 C:\Users\Rafael Santos\source\repos\SistemaOS\SistemaOS\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\bin\Debug\SistemaOS.exe.config
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\bin\Debug\SistemaOS.exe
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\bin\Debug\SistemaOS.pdb
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.AssemblyReference.cache
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.SuggestedBindingRedirects.cache
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.exe.config
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_PanelClientes.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Form1.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Properties.Resources.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_CadastrarServico.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_ServicoAndamento.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços.form_AlterarInformacaoServico.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_Panel.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.form_Servicos.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.GenerateResource.cache
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.exe.licenses
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.CoreCompileInputs.cache
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.CopyComplete
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.exe
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.pdb
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_Clientes.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_CadastrarClientes.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_AlterarInformacoesCliente.resources

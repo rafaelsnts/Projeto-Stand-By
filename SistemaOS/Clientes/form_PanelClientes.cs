@@ -7,15 +7,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SistemaOS.Clientes;
 
-namespace SistemaOS
+namespace SistemaOS.Clientes
 {
-    public partial class Form1 : Form
+    public partial class form_PanelClientes : Form
     {
-        public Form1()
+        public form_PanelClientes()
         {
             InitializeComponent();
+        }
+
+        private void showChildForminPanel(object Form)
+        {
+            if (this.pnl_Clientes.Controls.Count > 0)
+            {
+                this.pnl_Clientes.Controls.RemoveAt(0);
+            }
+            Form form = Form as Form;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
+            this.pnl_Clientes.Controls.Add(form);
+            form.Show();
         }
 
         private void btn_Fechar_Click(object sender, EventArgs e)
@@ -28,20 +41,24 @@ namespace SistemaOS
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btn_Servicos_Click_1(object sender, EventArgs e)
+        private void btn_Clientes_Click(object sender, EventArgs e)
         {
-            form_Servicos formulario = new form_Servicos();
-            formulario.ShowDialog();
+            showChildForminPanel(new form_Clientes());
+        }
+
+        private void btn_CadastrarClientes_Click(object sender, EventArgs e)
+        {
+            showChildForminPanel(new form_CadastrarClientes());
         }
 
         private void btn_Minimizar_MouseEnter(object sender, EventArgs e)
         {
-            btn_Minimizar.BackColor = Color.FromArgb(28, 27, 32);
+            btn_Fechar.BackColor = Color.FromArgb(28, 27, 32);
         }
 
         private void btn_Minimizar_MouseLeave(object sender, EventArgs e)
         {
-            btn_Minimizar.BackColor = Color.Transparent;
+            btn_Fechar.BackColor = Color.Transparent;
         }
 
         private void btn_Fechar_MouseEnter(object sender, EventArgs e)
@@ -52,12 +69,6 @@ namespace SistemaOS
         private void btn_Fechar_MouseLeave(object sender, EventArgs e)
         {
             btn_Fechar.BackColor = Color.Transparent;
-        }
-
-        private void btn_Clientes_Click(object sender, EventArgs e)
-        {
-            form_PanelClientes formulario = new form_PanelClientes();
-            formulario.ShowDialog();
         }
     }
 }

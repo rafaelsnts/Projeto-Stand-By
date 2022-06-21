@@ -573,6 +573,7 @@
             this.txt_ValorDaPeca.TextPlaceholder = "";
             this.txt_ValorDaPeca.UseSystemPasswordChar = false;
             this.txt_ValorDaPeca.WordWrap = true;
+            this.txt_ValorDaPeca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ValorDaPeca_KeyPress);
             // 
             // txt_ValorServico
             // 
@@ -648,6 +649,7 @@
             this.txt_ValorServico.TextPlaceholder = "";
             this.txt_ValorServico.UseSystemPasswordChar = false;
             this.txt_ValorServico.WordWrap = true;
+            this.txt_ValorServico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ValorServico_KeyPress);
             // 
             // txt_Acessorios
             // 
