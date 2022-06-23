@@ -17,8 +17,8 @@ namespace SistemaOS.Clientes
         public form_Clientes()
         {
             InitializeComponent();
-            BancoGlobalStatico.carregarServicosAndamento();
-            BancoGlobalStatico.carregarClientes();
+            BancoGlobalStatico.CarregarServicosAndamento();
+            BancoGlobalStatico.CarregarClientes();
             CarregarTabelaCliente();
         }
 
@@ -31,7 +31,7 @@ namespace SistemaOS.Clientes
             dt.Columns.Add("TELEFONE");
             dt.Columns.Add("TELEFONE RECADO");
 
-            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
                 dt.Rows.Add(cliente.sv_Id, cliente.sv_Nome, cliente.sv_Cpf, cliente.sv_Telefone,
                     cliente.sv_Telefone_Recado);
@@ -59,7 +59,7 @@ namespace SistemaOS.Clientes
         private void txt_BuscarCliente_KeyUp(object sender, KeyEventArgs e)
         {
             List<ClienteEstrutura> listaClienteEstrutura = new List<ClienteEstrutura>();
-            foreach (ClienteEstrutura buscaCliente in BancoGlobalStatico.bancoCliente)
+            foreach (ClienteEstrutura buscaCliente in BancoGlobalStatico.listBancoCliente)
             {
                 if (buscaCliente.sv_Nome.ToLower().Contains(txt_BuscarCliente.Text.ToLower()) || buscaCliente.sv_Cpf.ToLower().Contains(txt_BuscarCliente.Text.ToLower()))
                 {
@@ -109,7 +109,7 @@ namespace SistemaOS.Clientes
             try
             {
                 string idCliente = grid_Clientes.SelectedCells[0].Value.ToString();
-                foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.bancoServicosAndamento)
+                foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.listBancoServicosAndamento)
                 {
                     if (idCliente == servicoAndamento.sv_fk_cl_idCliente.ToString())
                     {
@@ -119,12 +119,12 @@ namespace SistemaOS.Clientes
                     }
                 }
 
-                foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+                foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
                 {
                     if (idCliente == cliente.sv_Id.ToString())
                     {
                         MessageBox.Show($"Tem certeza?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-                        BancoGlobalStatico.bancoCliente.Remove(cliente);
+                        BancoGlobalStatico.listBancoCliente.Remove(cliente);
                         break;
                     }
                 }
@@ -136,12 +136,17 @@ namespace SistemaOS.Clientes
             }
         }
 
-        private void txt_BuscarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextboxApenasNumerosLetras(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32 && e.KeyChar != 46 && e.KeyChar != 45)
             {
                 e.Handled = true;
             }
+        }
+
+        private void txt_BuscarCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
         }
     }
 }

@@ -17,8 +17,8 @@ namespace SistemaOS.Serviços_em_Andamento
         public form_CadastrarServico()
         {
             InitializeComponent();
-            BancoGlobalStatico.carregarClientes();
-            carregarComboboxClientes();
+            BancoGlobalStatico.CarregarClientes();
+            CarregarComboboxClientes();
             txt_DataCadastro.Text = DateTime.Now.ToShortDateString();
             txt_DataConclusao.Text = DateTime.Now.ToShortDateString();
         }
@@ -35,7 +35,7 @@ namespace SistemaOS.Serviços_em_Andamento
 
         private void btn_ServicosAndamento_Click(object sender, EventArgs e)
         {
-            form_Panel formulario = new form_Panel();
+            form_PanelServicos formulario = new form_PanelServicos();
             formulario.Show();
         }
 
@@ -44,15 +44,15 @@ namespace SistemaOS.Serviços_em_Andamento
             this.Close();
         }
 
-        private void carregarComboboxClientes()
+        private void CarregarComboboxClientes()
         {
-            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
                 cmb_IdCliente.Items.Add(cliente.sv_Nome);
             }
         }
 
-        private void limparTelaCadastroServico()
+        private void LimparTelaCadastroServico()
         {
             txt_Id.Text = "";
             txt_IdCliente.Text = "";
@@ -70,27 +70,27 @@ namespace SistemaOS.Serviços_em_Andamento
             txt_Status.Text = "";
         }
 
-        private decimal[] VerificarValorServicoEPeca()
+        private decimal[] ValidarCamposServicoPecas()
         {
             decimal valorServico;
-            decimal valorPeça;
+            decimal valorPeca;
             if (txt_ValorServico.Text.Length <= 0 && txt_ValorDaPeca.Text.Length <= 0)
             {
                 valorServico = 0;
-                valorPeça = 0;
+                valorPeca = 0;
             }
             else
             {
-                valorServico = Convert.ToDecimal(txt_ValorServico.Text.Replace(".", ","));
-                valorPeça = Convert.ToDecimal(txt_ValorDaPeca.Text.Replace(".", ","));
+                valorServico = txt_ValorServico.Text.Length <= 0 ? 0 : Convert.ToDecimal(txt_ValorServico.Text.Replace(".", ","));
+                valorPeca = txt_ValorDaPeca.Text.Length <= 0 ? 0 : Convert.ToDecimal(txt_ValorDaPeca.Text.Replace(".", ","));
             }
 
-            return new decimal[] { valorServico, valorPeça };
+            return new[] { valorServico, valorPeca };
         }
 
         private int BuscarIdCliente()
         {
-            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
                 if (cliente.sv_Nome == cmb_IdCliente.Text)
                 {
@@ -103,34 +103,34 @@ namespace SistemaOS.Serviços_em_Andamento
 
         private void CadastrarServico(decimal lucro, decimal valorPeca, decimal valorServico)
         {
-            int status = 1;
-            BancoGlobalStatico.bancoServicosAndamento.Add(new ServicosAdamentoEstrutura(BancoGlobalStatico.idGlobalServicosAndamento,
+            int statusServico = 1;
+            BancoGlobalStatico.listBancoServicosAndamento.Add(new ServicosAdamentoEstrutura(BancoGlobalStatico.idGlobalServicosAndamento,
                Convert.ToInt32(BuscarIdCliente()), txt_Aparelho.Text, txt_Defeito.Text, txt_Senha.Text, txt_Situacao.Text,
                 txt_Acessorios.Text, Convert.ToDateTime(txt_DataCadastro.Text),
                 Convert.ToDateTime(txt_DataConclusao.Text), valorServico,
                 valorPeca, lucro,
-                txt_ServicoFeito.Text, status));
+                txt_ServicoFeito.Text, statusServico));
         }
 
         private void btn_Salvar_Click(object sender, EventArgs e)
         {
             try
             {
-                decimal lucro = VerificarValorServicoEPeca()[0] - VerificarValorServicoEPeca()[1];
+                decimal lucro = ValidarCamposServicoPecas()[0] - ValidarCamposServicoPecas()[1];
                 if (txt_Aparelho.Text == "" || txt_Defeito.Text == "" || cmb_IdCliente.SelectedItem.ToString() == null)
                 {
                     MessageBox.Show("Preencha todos os campos Obrigatórios");
                 }
                 else
                 {
-                    decimal valorServico = VerificarValorServicoEPeca()[0];
-                    decimal valorPeca = VerificarValorServicoEPeca()[1];
+                    decimal valorServico = ValidarCamposServicoPecas()[0];
+                    decimal valorPeca = ValidarCamposServicoPecas()[1];
                     CadastrarServico(lucro, valorPeca, valorServico);
                     BancoGlobalStatico.idGlobalIdCliente++;
                     BancoGlobalStatico.idGlobalServicosAndamento++;
-                    BancoGlobalStatico.carregarServicosAndamento();
+                    BancoGlobalStatico.CarregarServicosAndamento();
                     MessageBox.Show("Serviço Cadastrado");
-                    limparTelaCadastroServico();
+                    LimparTelaCadastroServico();
                 }
             }
             catch (Exception exception)
@@ -139,93 +139,7 @@ namespace SistemaOS.Serviços_em_Andamento
             }
         }
 
-        private void txt_Aparelho_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_Defeito_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_Senha_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_Situacao_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_Acessorios_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_ServicoFeito_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_Status_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_DataCadastro_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            TextBox Data = sender as TextBox;
-            if (e.KeyChar >= 48 && e.KeyChar <= 57)
-            {
-                Data.SelectionStart = Data.Text.Length + 1;
-
-                if (Data.Text.Length == 2 || Data.Text.Length == 5)
-                    Data.Text += "/";
-                else if (Data.Text.Length == 10)
-                    Data.Text += "";
-                Data.SelectionStart = Data.Text.Length + 1;
-            }
-        }
-
-        private void txt_DataConclusao_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            TextBox Data = sender as TextBox;
-            if (e.KeyChar >= 48 && e.KeyChar <= 57)
-            {
-                Data.SelectionStart = Data.Text.Length + 1;
-
-                if (Data.Text.Length == 2 || Data.Text.Length == 5)
-                    Data.Text += "/";
-                else if (Data.Text.Length == 10)
-                    Data.Text += "";
-                Data.SelectionStart = Data.Text.Length + 1;
-            }
-        }
-
-        private void cmb_IdCliente_KeyPress(object sender, KeyPressEventArgs e)
+        private void ValidarApenasNumeros(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
             {
@@ -233,28 +147,100 @@ namespace SistemaOS.Serviços_em_Andamento
             }
         }
 
-        private void txt_ValorDaPeca_KeyPress(object sender, KeyPressEventArgs e)
+        private void ValidarData(object sender, KeyPressEventArgs e)
+        {
+            TextBox Data = sender as TextBox;
+            if (e.KeyChar >= 48 && e.KeyChar <= 57)
+            {
+                Data.SelectionStart = Data.Text.Length + 1;
+
+                if (Data.Text.Length == 2 || Data.Text.Length == 5)
+                    Data.Text += "/";
+                else if (Data.Text.Length == 10)
+                    Data.Text += "";
+                Data.SelectionStart = Data.Text.Length + 1;
+            }
+        }
+
+        private void ValidarValores(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 44 && e.KeyChar != 46)
             {
                 e.Handled = true;
             }
+        }
+
+        private void TextboxApenasNumerosLetras(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_Aparelho_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
+        }
+
+        private void txt_Defeito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
+        }
+
+        private void txt_Senha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
+        }
+
+        private void txt_Situacao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
+        }
+
+        private void txt_Acessorios_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
+        }
+
+        private void txt_ServicoFeito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextboxApenasNumerosLetras(sender, e);
+        }
+
+        private void txt_Status_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarApenasNumeros(sender, e);
+        }
+
+        private void txt_DataCadastro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarData(sender, e);
+        }
+
+        private void txt_DataConclusao_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarData(sender, e);
+        }
+
+        private void cmb_IdCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarApenasNumeros(sender, e);
+        }
+
+        private void txt_ValorDaPeca_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarValores(sender, e);
         }
 
         private void txt_ValorServico_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 44 && e.KeyChar != 46)
-            {
-                e.Handled = true;
-            }
+            ValidarValores(sender, e);
         }
 
         private void txt_LucroServico_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)
-            {
-                e.Handled = true;
-            }
+            ValidarValores(sender, e);
         }
     }
 }

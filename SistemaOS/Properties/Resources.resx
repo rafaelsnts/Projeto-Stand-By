@@ -118,196 +118,211 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="save_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="password_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checkmark_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkmark_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="audio_cable_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\audio_cable_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_pane_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_pane_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="service_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\service_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_file_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_file_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loading_bar_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading_bar_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="service1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\service1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="high_priority_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\high_priority_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mobile_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_window_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_window_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mobile_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mobile_taxi_service_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile_taxi_service_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="services_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\services_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customer_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="administrator_male_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\administrator_male_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize_window_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize_window_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wire_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wire_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cell_phone_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cell_phone_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dog_tag_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dog_tag_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="services_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\services_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="calendar_1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar_1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mobile_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="administrator_male_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\administrator_male_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guarantee_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guarantee_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loading_bar_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loading_bar_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="below_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\below_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money_box_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money_box_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="high_priority_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\high_priority_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="password_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="loading_sign_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading_sign_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_file_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_file_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_window_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_window_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_pane_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_pane_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="administrator_male_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\administrator_male_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="services_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\services_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customer_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="contact_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contact_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="money_box_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money_box_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="android_tablet_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\android_tablet_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guarantee_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guarantee_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save_close_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_close_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="request_service_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\request_service_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guarantee_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guarantee_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="request_service_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\request_service_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="high_risk_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\high_risk_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search_in_list_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_in_list_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="audio_cable_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio_cable_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="documents_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\documents_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mobile_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="telephone_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telephone_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_close_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_close_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="task_completed_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\task_completed_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading_sign_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading_sign_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="administrator_male_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrator_male_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="service_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\service_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money_box_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money_box_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="service1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\service1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar_1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar_1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="services_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wire_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wire_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="administrator_male_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrator_male_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="realtime_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\realtime_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="high_risk_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\high_risk_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_window_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_window_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="realtime_15px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\realtime_15px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="high_priority_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\high_priority_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search_in_list_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_in_list_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telephone_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telephone_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="below_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\below_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_file_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_file_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile_taxi_service_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mobile_taxi_service_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_in_list_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_in_list_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dog_tag_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog_tag_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkmark_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkmark_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading_bar_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading_bar_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_20px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_20px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money1_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money1_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_window_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_window_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="android_tablet_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\android_tablet_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="realtime_15px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\realtime_15px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="services_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_file_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_file_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_pane_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_pane_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="high_priority_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\high_priority_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cell_phone_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cell_phone_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="administrator_male_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\administrator_male_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="services_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="task_completed_100px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\task_completed_100px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contact_35px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contact_35px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_pane_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_pane_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money_box_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money_box_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guarantee_100px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guarantee_100px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

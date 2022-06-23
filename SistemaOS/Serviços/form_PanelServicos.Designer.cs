@@ -1,6 +1,6 @@
 ﻿namespace SistemaOS.Serviços_em_Andamento
 {
-    partial class form_Panel
+    partial class form_PanelServicos
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormDock3 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.btn_ServicosConcluidos = new System.Windows.Forms.Button();
             this.panelTOP.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +121,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(27)))), ((int)(((byte)(32)))));
+            this.panel1.Controls.Add(this.btn_ServicosConcluidos);
             this.panel1.Controls.Add(this.btn_CadastrarServicos);
             this.panel1.Controls.Add(this.btn_ServicosAndamento);
             this.panel1.Location = new System.Drawing.Point(0, 32);
@@ -135,9 +137,9 @@
             this.btn_CadastrarServicos.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btn_CadastrarServicos.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_CadastrarServicos.Image = global::SistemaOS.Properties.Resources.save_50px;
-            this.btn_CadastrarServicos.Location = new System.Drawing.Point(829, -20);
+            this.btn_CadastrarServicos.Location = new System.Drawing.Point(588, -23);
             this.btn_CadastrarServicos.Name = "btn_CadastrarServicos";
-            this.btn_CadastrarServicos.Size = new System.Drawing.Size(137, 174);
+            this.btn_CadastrarServicos.Size = new System.Drawing.Size(137, 178);
             this.btn_CadastrarServicos.TabIndex = 2;
             this.btn_CadastrarServicos.Text = "Cadastrar Serviço";
             this.btn_CadastrarServicos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -151,9 +153,9 @@
             this.btn_ServicosAndamento.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btn_ServicosAndamento.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_ServicosAndamento.Image = global::SistemaOS.Properties.Resources.loading_bar_100px1;
-            this.btn_ServicosAndamento.Location = new System.Drawing.Point(686, -20);
+            this.btn_ServicosAndamento.Location = new System.Drawing.Point(727, -23);
             this.btn_ServicosAndamento.Name = "btn_ServicosAndamento";
-            this.btn_ServicosAndamento.Size = new System.Drawing.Size(137, 175);
+            this.btn_ServicosAndamento.Size = new System.Drawing.Size(137, 179);
             this.btn_ServicosAndamento.TabIndex = 1;
             this.btn_ServicosAndamento.Text = "Serviços em Andamento";
             this.btn_ServicosAndamento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -280,7 +282,23 @@
             this.bunifuFormDock3.TitleBarOptions.TitleBarControl = this.pnl_ServicosAndamento;
             this.bunifuFormDock3.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
-            // form_Panel
+            // btn_ServicosConcluidos
+            // 
+            this.btn_ServicosConcluidos.FlatAppearance.BorderSize = 0;
+            this.btn_ServicosConcluidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ServicosConcluidos.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_ServicosConcluidos.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_ServicosConcluidos.Image = global::SistemaOS.Properties.Resources.task_completed_100px;
+            this.btn_ServicosConcluidos.Location = new System.Drawing.Point(870, -20);
+            this.btn_ServicosConcluidos.Name = "btn_ServicosConcluidos";
+            this.btn_ServicosConcluidos.Size = new System.Drawing.Size(137, 177);
+            this.btn_ServicosConcluidos.TabIndex = 15;
+            this.btn_ServicosConcluidos.Text = "Serviços Concluídos";
+            this.btn_ServicosConcluidos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ServicosConcluidos.UseVisualStyleBackColor = true;
+            this.btn_ServicosConcluidos.Click += new System.EventHandler(this.btn_ServicosConcluidos_Click);
+            // 
+            // form_PanelServicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -290,7 +308,7 @@
             this.Controls.Add(this.panelTOP);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "form_Panel";
+            this.Name = "form_PanelServicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "form_ServicosAndamento";
             this.panelTOP.ResumeLayout(false);
@@ -311,5 +329,6 @@
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock2;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock3;
+        private System.Windows.Forms.Button btn_ServicosConcluidos;
     }
 }

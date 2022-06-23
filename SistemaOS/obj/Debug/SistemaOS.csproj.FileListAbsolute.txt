@@ -38,7 +38,6 @@ E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Properties.Res
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_CadastrarServico.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_ServicoAndamento.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços.form_AlterarInformacaoServico.resources
-E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_Panel.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.form_Servicos.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.GenerateResource.cache
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.exe.licenses
@@ -49,3 +48,6 @@ E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.pdb
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_Clientes.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_CadastrarClientes.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_AlterarInformacoesCliente.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_Concluidos.form_ServicoConcluido.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_PanelServicos.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Garantia.form_Garantia.resources

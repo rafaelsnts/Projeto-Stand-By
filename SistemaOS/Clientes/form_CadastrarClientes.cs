@@ -42,9 +42,9 @@ namespace SistemaOS.Clientes
                 }
                 else
                 {
-                    BancoGlobalStatico.bancoCliente.Add(new ClienteEstrutura(BancoGlobalStatico.idGlobalCliente, txt_Nome.Text, txt_Cpf.Text, txt_Telefone.Text, txt_TelefoneRecado.Text));
+                    BancoGlobalStatico.listBancoCliente.Add(new ClienteEstrutura(BancoGlobalStatico.idGlobalCliente, txt_Nome.Text, txt_Cpf.Text, txt_Telefone.Text, txt_TelefoneRecado.Text));
                     BancoGlobalStatico.idGlobalCliente++;
-                    BancoGlobalStatico.carregarClientes();
+                    BancoGlobalStatico.CarregarClientes();
                     MessageBox.Show("Cliente Cadastrado");
                     LimparTelaCadastroCliente();
                 }
@@ -55,7 +55,15 @@ namespace SistemaOS.Clientes
             }
         }
 
-        private void txt_Cpf_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextboxApenasLetras(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void ValidarCpf(object sender, KeyPressEventArgs e)
         {
             TextBox Cpf = sender as TextBox;
             if (e.KeyChar >= 48 && e.KeyChar <= 57)
@@ -76,7 +84,7 @@ namespace SistemaOS.Clientes
             }
         }
 
-        private void txt_Telefone_KeyPress(object sender, KeyPressEventArgs e)
+        private void ValidarTelefone(object sender, KeyPressEventArgs e)
         {
             TextBox Tel = sender as TextBox;
             if (e.KeyChar >= 48 && e.KeyChar <= 57)
@@ -95,35 +103,26 @@ namespace SistemaOS.Clientes
             {
                 e.Handled = true;
             }
+        }
+
+        private void txt_Cpf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarCpf(sender, e);
+        }
+
+        private void txt_Telefone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            ValidarTelefone(sender, e);
         }
 
         private void txt_TelefoneRecado_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TextBox Tel = sender as TextBox;
-            if (e.KeyChar >= 48 && e.KeyChar <= 57)
-            {
-                Tel.SelectionStart = Tel.Text.Length + 1;
-
-                if (Tel.Text.Length == 0 || Tel.Text.Length == 1)
-                    Tel.Text += "(";
-                else if (Tel.Text.Length == 3)
-                    Tel.Text += ")";
-                else if (Tel.Text.Length == 8)
-                    Tel.Text += "-";
-                Tel.SelectionStart = Tel.Text.Length + 1;
-            }
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)
-            {
-                e.Handled = true;
-            }
+            ValidarTelefone(sender, e);
         }
 
         private void txt_Nome_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32)
-            {
-                e.Handled = true;
-            }
+            TextboxApenasLetras(sender, e);
         }
     }
 }

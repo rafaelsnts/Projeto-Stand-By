@@ -101,6 +101,12 @@
     <Compile Include="Clientes\form_PanelClientes.Designer.cs">
       <DependentUpon>form_PanelClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Garantia\form_Garantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Garantia\form_Garantia.Designer.cs">
+      <DependentUpon>form_Garantia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu Principal\form_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="Garantia\GarantiaEstrutura.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serviços Concluidos\form_ServicoConcluido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serviços Concluidos\form_ServicoConcluido.Designer.cs">
+      <DependentUpon>form_ServicoConcluido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Serviços em Andamento\form_CadastrarServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +166,9 @@
     <EmbeddedResource Include="Clientes\form_PanelClientes.resx">
       <DependentUpon>form_PanelClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Garantia\form_Garantia.resx">
+      <DependentUpon>form_Garantia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu Principal\form_MenuPrincipal.resx">
       <DependentUpon>form_MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +183,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Serviços Concluidos\form_ServicoConcluido.resx">
+      <DependentUpon>form_ServicoConcluido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Serviços em Andamento\form_CadastrarServico.resx">
       <DependentUpon>form_CadastrarServico.cs</DependentUpon>
     </EmbeddedResource>
@@ -387,6 +405,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\telephone_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_completed_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\realtime_15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\realtime_15px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\realtime_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guarantee_100px2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

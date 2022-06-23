@@ -20,14 +20,14 @@ namespace SistemaOS.Serviços_em_Andamento
         public form_ServicoAndamento()
         {
             InitializeComponent();
-            BancoGlobalStatico.carregarClientes();
-            BancoGlobalStatico.carregarServicosAndamento();
-            carregarTabelaServicosAndamento();
+            BancoGlobalStatico.CarregarClientes();
+            BancoGlobalStatico.CarregarServicosAndamento();
+            CarregarTabelaServicosAndamento();
         }
 
         public string BuscarNomeCliente(int id)
         {
-            foreach (ClienteEstrutura cliente in BancoGlobalStatico.bancoCliente)
+            foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
                 if (cliente.sv_Id == id)
                 {
@@ -38,7 +38,7 @@ namespace SistemaOS.Serviços_em_Andamento
             return "";
         }
 
-        public void carregarTabelaServicosAndamento()
+        public void CarregarTabelaServicosAndamento()
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
@@ -56,20 +56,23 @@ namespace SistemaOS.Serviços_em_Andamento
             dt.Columns.Add("SERVIÇO");
             dt.Columns.Add("STATUS");
 
-            foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.bancoServicosAndamento)
+            foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.listBancoServicosAndamento)
             {
-                dt.Rows.Add(servicoAndamento.sv_Id, BuscarNomeCliente(servicoAndamento.sv_fk_cl_idCliente), servicoAndamento.sv_Aparelho,
-                    servicoAndamento.sv_Defeito, servicoAndamento.sv_Senha, servicoAndamento.sv_Situacao,
-                    servicoAndamento.sv_Acessorios, servicoAndamento.sv_dataCadastro.ToShortDateString(),
-                    servicoAndamento.sv_dataConclusao.ToShortDateString(), string.Format("{0:0.00}", servicoAndamento.sv_valorServico),
-                    string.Format("{0:0.00}", servicoAndamento.sv_valorPeca), string.Format("{0:0.00}", servicoAndamento.sv_lucroServico), servicoAndamento.sv_servicoFeito,
-                    (servicoAndamento.sv_Status) == 1 ? "Em andamento" : "Concluido");
+                if (servicoAndamento.sv_Status == 1)
+                {
+                    dt.Rows.Add(servicoAndamento.sv_Id, BuscarNomeCliente(servicoAndamento.sv_fk_cl_idCliente), servicoAndamento.sv_Aparelho,
+                        servicoAndamento.sv_Defeito, servicoAndamento.sv_Senha, servicoAndamento.sv_Situacao,
+                        servicoAndamento.sv_Acessorios, servicoAndamento.sv_dataCadastro.ToShortDateString(),
+                        servicoAndamento.sv_dataConclusao.ToShortDateString(), string.Format("{0:0.00}", servicoAndamento.sv_valorServico),
+                        string.Format("{0:0.00}", servicoAndamento.sv_valorPeca), string.Format("{0:0.00}", servicoAndamento.sv_lucroServico), servicoAndamento.sv_servicoFeito,
+                        (servicoAndamento.sv_Status) == 1 ? "Em andamento" : "Concluido");
+                }
             }
 
             grid_ServicoAndamento.DataSource = dt;
         }
 
-        public void carregarTabelaPorBusca(List<ServicosAdamentoEstrutura> _servicosAdamento)
+        public void CarregarTabelaPorBusca(List<ServicosAdamentoEstrutura> _servicosAndamento)
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
@@ -87,14 +90,17 @@ namespace SistemaOS.Serviços_em_Andamento
             dt.Columns.Add("SERVIÇO FEITO");
             dt.Columns.Add("STATUS");
 
-            foreach (ServicosAdamentoEstrutura servicoAndamento in _servicosAdamento)
+            foreach (ServicosAdamentoEstrutura servicoAndamento in _servicosAndamento)
             {
-                dt.Rows.Add(servicoAndamento.sv_Id, BuscarNomeCliente(servicoAndamento.sv_fk_cl_idCliente), servicoAndamento.sv_Aparelho,
-                    servicoAndamento.sv_Defeito, servicoAndamento.sv_Senha, servicoAndamento.sv_Situacao,
-                    servicoAndamento.sv_Acessorios, servicoAndamento.sv_dataCadastro.ToShortDateString(),
-                    servicoAndamento.sv_dataConclusao.ToShortDateString(), string.Format("{0:0.00}", servicoAndamento.sv_valorServico),
-                    string.Format("{0:0.00}", servicoAndamento.sv_valorPeca), string.Format("{0:0.00}", servicoAndamento.sv_lucroServico), servicoAndamento.sv_servicoFeito,
-                    (servicoAndamento.sv_Status) == 1 ? "Em andamento" : "Concluido");
+                if (servicoAndamento.sv_Status == 1)
+                {
+                    dt.Rows.Add(servicoAndamento.sv_Id, BuscarNomeCliente(servicoAndamento.sv_fk_cl_idCliente), servicoAndamento.sv_Aparelho,
+                        servicoAndamento.sv_Defeito, servicoAndamento.sv_Senha, servicoAndamento.sv_Situacao,
+                        servicoAndamento.sv_Acessorios, servicoAndamento.sv_dataCadastro.ToShortDateString(),
+                        servicoAndamento.sv_dataConclusao.ToShortDateString(), string.Format("{0:0.00}", servicoAndamento.sv_valorServico),
+                        string.Format("{0:0.00}", servicoAndamento.sv_valorPeca), string.Format("{0:0.00}", servicoAndamento.sv_lucroServico), servicoAndamento.sv_servicoFeito,
+                        (servicoAndamento.sv_Status) == 1 ? "Em andamento" : "Concluido");
+                }
             }
 
             grid_ServicoAndamento.DataSource = dt;
@@ -103,32 +109,32 @@ namespace SistemaOS.Serviços_em_Andamento
         private void txt_Buscar_KeyUp(object sender, KeyEventArgs e)
         {
             List<ServicosAdamentoEstrutura> listaServicosAdamentoEstruturas = new List<ServicosAdamentoEstrutura>();
-            foreach (ServicosAdamentoEstrutura buscaAparelho in BancoGlobalStatico.bancoServicosAndamento)
+            foreach (ServicosAdamentoEstrutura buscaAparelho in BancoGlobalStatico.listBancoServicosAndamento)
             {
                 if (buscaAparelho.sv_Aparelho.ToLower().Contains(txt_Buscar.Text.ToLower()))
                 {
                     listaServicosAdamentoEstruturas.Add(buscaAparelho);
                 }
 
-                carregarTabelaPorBusca(listaServicosAdamentoEstruturas);
+                CarregarTabelaPorBusca(listaServicosAdamentoEstruturas);
             }
         }
 
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             List<ServicosAdamentoEstrutura> listaServicosAdamentoEstruturas = new List<ServicosAdamentoEstrutura>();
-            foreach (ServicosAdamentoEstrutura buscaAparelho in BancoGlobalStatico.bancoServicosAndamento)
+            foreach (ServicosAdamentoEstrutura buscaAparelho in BancoGlobalStatico.listBancoServicosAndamento)
             {
                 if (buscaAparelho.sv_Aparelho == txt_Buscar.Text)
                 {
                     listaServicosAdamentoEstruturas.Add(buscaAparelho);
                 }
 
-                carregarTabelaPorBusca(listaServicosAdamentoEstruturas);
+                CarregarTabelaPorBusca(listaServicosAdamentoEstruturas);
             }
         }
 
-        private void alterarInformacaoServico()
+        private void AlterarInformacaoServico()
         {
             form_AlterarInformacaoServico formulario = new form_AlterarInformacaoServico(this);
             formulario.lbl_Alterar.Text = grid_ServicoAndamento.SelectedCells[0].Value.ToString();
@@ -153,7 +159,7 @@ namespace SistemaOS.Serviços_em_Andamento
             }
             else
             {
-                alterarInformacaoServico();
+                AlterarInformacaoServico();
             }
         }
 
@@ -166,7 +172,7 @@ namespace SistemaOS.Serviços_em_Andamento
                 return;
             }
             string excluirServicoAndamento = grid_ServicoAndamento.SelectedCells[2].Value.ToString();
-            foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.bancoServicosAndamento)
+            foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.listBancoServicosAndamento)
             {
                 if (excluirServicoAndamento == servicoAndamento.sv_Aparelho)
                 {
@@ -174,8 +180,8 @@ namespace SistemaOS.Serviços_em_Andamento
                             MessageBoxIcon.Question) == DialogResult.Yes)
 
                     {
-                        BancoGlobalStatico.bancoServicosAndamento.Remove(servicoAndamento);
-                        carregarTabelaServicosAndamento();
+                        BancoGlobalStatico.listBancoServicosAndamento.Remove(servicoAndamento);
+                        CarregarTabelaServicosAndamento();
                         break;
                     }
                 }

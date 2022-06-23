@@ -30,7 +30,7 @@ namespace SistemaOS
 
         private void btn_ServicosAndamento_Click(object sender, EventArgs e)
         {
-            form_Panel formulario = new form_Panel();
+            form_PanelServicos formulario = new form_PanelServicos();
             formulario.ShowDialog();
         }
 

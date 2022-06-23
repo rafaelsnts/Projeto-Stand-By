@@ -323,6 +323,16 @@ namespace SistemaOS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap guarantee_100px2 {
+            get {
+                object obj = ResourceManager.GetObject("guarantee_100px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap high_priority_20px {
             get {
                 object obj = ResourceManager.GetObject("high_priority_20px", resourceCulture);
@@ -543,6 +553,36 @@ namespace SistemaOS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap realtime_15px {
+            get {
+                object obj = ResourceManager.GetObject("realtime_15px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap realtime_15px1 {
+            get {
+                object obj = ResourceManager.GetObject("realtime_15px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap realtime_30px {
+            get {
+                object obj = ResourceManager.GetObject("realtime_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap request_service_20px {
             get {
                 object obj = ResourceManager.GetObject("request_service_20px", resourceCulture);
@@ -676,6 +716,16 @@ namespace SistemaOS.Properties {
         internal static System.Drawing.Bitmap task_completed_100px {
             get {
                 object obj = ResourceManager.GetObject("task_completed_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap task_completed_100px1 {
+            get {
+                object obj = ResourceManager.GetObject("task_completed_100px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

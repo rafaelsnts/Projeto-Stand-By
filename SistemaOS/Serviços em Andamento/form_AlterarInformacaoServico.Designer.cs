@@ -78,7 +78,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Senha = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_Defeito = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_Concluido = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.txt_ServicoFeito = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_ValorDaPeca = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -389,22 +389,22 @@
             this.txt_Defeito.WordWrap = true;
             this.txt_Defeito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Defeito_KeyPress);
             // 
-            // btn_Cancelar
+            // btn_Concluido
             // 
-            this.btn_Cancelar.FlatAppearance.BorderSize = 0;
-            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_Cancelar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Cancelar.Image = global::SistemaOS.Properties.Resources.close_pane_100px;
-            this.btn_Cancelar.Location = new System.Drawing.Point(517, 369);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(106, 126);
-            this.btn_Cancelar.TabIndex = 11;
-            this.btn_Cancelar.Text = "Sair";
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            this.btn_Concluido.FlatAppearance.BorderSize = 0;
+            this.btn_Concluido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Concluido.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Concluido.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Concluido.Image = global::SistemaOS.Properties.Resources.task_completed_100px1;
+            this.btn_Concluido.Location = new System.Drawing.Point(517, 369);
+            this.btn_Concluido.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Concluido.Name = "btn_Concluido";
+            this.btn_Concluido.Size = new System.Drawing.Size(106, 126);
+            this.btn_Concluido.TabIndex = 11;
+            this.btn_Concluido.Text = "Concluido";
+            this.btn_Concluido.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_Concluido.UseVisualStyleBackColor = true;
+            this.btn_Concluido.Click += new System.EventHandler(this.btn_Concluido_Click);
             // 
             // btn_Salvar
             // 
@@ -974,7 +974,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_Senha);
             this.Controls.Add(this.txt_Defeito);
-            this.Controls.Add(this.btn_Cancelar);
+            this.Controls.Add(this.btn_Concluido);
             this.Controls.Add(this.btn_Salvar);
             this.Controls.Add(this.txt_ServicoFeito);
             this.Controls.Add(this.txt_ValorDaPeca);
@@ -999,7 +999,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Salvar;
         public Bunifu.UI.WinForms.BunifuTextBox txt_Aparelho;
         private System.Windows.Forms.Label label2;
@@ -1016,5 +1015,6 @@
         public Bunifu.UI.WinForms.BunifuTextBox txt_DataCadastro;
         public Bunifu.UI.WinForms.BunifuTextBox txt_Situacao;
         public System.Windows.Forms.Label lbl_Alterar;
+        public System.Windows.Forms.Button btn_Concluido;
     }
 }

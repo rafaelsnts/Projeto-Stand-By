@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaOS.Serviços_Concluidos;
 
 namespace SistemaOS.Serviços_em_Andamento
 {
-    public partial class form_Panel : Form
+    public partial class form_PanelServicos : Form
     {
-        public form_Panel()
+        public form_PanelServicos()
         {
             InitializeComponent();
         }
@@ -79,6 +80,11 @@ namespace SistemaOS.Serviços_em_Andamento
         private void btn_Fechar_MouseLeave(object sender, EventArgs e)
         {
             btn_Fechar.BackColor = Color.Transparent;
+        }
+
+        private void btn_ServicosConcluidos_Click(object sender, EventArgs e)
+        {
+            showChildForminPanel(new form_ServicoConcluido());
         }
     }
 }

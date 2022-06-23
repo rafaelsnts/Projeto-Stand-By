@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaOS.Clientes;
+using SistemaOS.Serviços_em_Andamento;
 
 namespace SistemaOS
 {
@@ -30,7 +31,7 @@ namespace SistemaOS
 
         private void btn_Servicos_Click_1(object sender, EventArgs e)
         {
-            form_Servicos formulario = new form_Servicos();
+            form_PanelServicos formulario = new form_PanelServicos();
             formulario.ShowDialog();
         }
 
