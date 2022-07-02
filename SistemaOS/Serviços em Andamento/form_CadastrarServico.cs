@@ -17,10 +17,16 @@ namespace SistemaOS.Serviços_em_Andamento
         public form_CadastrarServico()
         {
             InitializeComponent();
-            BancoGlobalStatico.CarregarClientes();
+            InicializarClientesEServicos();
             CarregarComboboxClientes();
             txt_DataCadastro.Text = DateTime.Now.ToShortDateString();
             txt_DataConclusao.Text = DateTime.Now.ToShortDateString();
+        }
+
+        private void InicializarClientesEServicos()
+        {
+            BancoGlobalStatico.CarregarClientes();
+            BancoGlobalStatico.CarregarServicosAndamento();
         }
 
         private void btn_Fechar_Click(object sender, EventArgs e)
@@ -48,12 +54,13 @@ namespace SistemaOS.Serviços_em_Andamento
         {
             foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
-                cmb_IdCliente.Items.Add(cliente.sv_Nome);
+                cmb_IdCliente.Items.Add(cliente.cl_Nome);
             }
         }
 
         private void LimparTelaCadastroServico()
         {
+            cmb_IdCliente.Text = "";
             txt_Id.Text = "";
             txt_IdCliente.Text = "";
             txt_Aparelho.Text = "";
@@ -61,8 +68,6 @@ namespace SistemaOS.Serviços_em_Andamento
             txt_Senha.Text = "";
             txt_Situacao.Text = "";
             txt_Acessorios.Text = "";
-            txt_DataCadastro.Text = "";
-            txt_DataConclusao.Text = "";
             txt_ValorServico.Text = "";
             txt_ValorDaPeca.Text = "";
             txt_LucroServico.Text = "";
@@ -92,24 +97,22 @@ namespace SistemaOS.Serviços_em_Andamento
         {
             foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
-                if (cliente.sv_Nome == cmb_IdCliente.Text)
+                if (cliente.cl_Nome == cmb_IdCliente.Text)
                 {
-                    return cliente.sv_Id;
+                    return cliente.cl_Id;
                 }
             }
 
-            return Convert.ToInt32(txt_Id.Text);
+            return 0;
         }
 
         private void CadastrarServico(decimal lucro, decimal valorPeca, decimal valorServico)
         {
             int statusServico = 1;
+
             BancoGlobalStatico.listBancoServicosAndamento.Add(new ServicosAdamentoEstrutura(BancoGlobalStatico.idGlobalServicosAndamento,
                Convert.ToInt32(BuscarIdCliente()), txt_Aparelho.Text, txt_Defeito.Text, txt_Senha.Text, txt_Situacao.Text,
-                txt_Acessorios.Text, Convert.ToDateTime(txt_DataCadastro.Text),
-                Convert.ToDateTime(txt_DataConclusao.Text), valorServico,
-                valorPeca, lucro,
-                txt_ServicoFeito.Text, statusServico));
+                txt_Acessorios.Text, DateTime.Now.Date, valorServico, valorPeca, lucro, txt_ServicoFeito.Text, statusServico));
         }
 
         private void btn_Salvar_Click(object sender, EventArgs e)
@@ -117,19 +120,17 @@ namespace SistemaOS.Serviços_em_Andamento
             try
             {
                 decimal lucro = ValidarCamposServicoPecas()[0] - ValidarCamposServicoPecas()[1];
-                if (txt_Aparelho.Text == "" || txt_Defeito.Text == "" || cmb_IdCliente.SelectedItem.ToString() == null)
+                if (txt_Aparelho.Text == "" || txt_Defeito.Text == "" || cmb_IdCliente.SelectedItem.ToString() == "")
                 {
-                    MessageBox.Show("Preencha todos os campos Obrigatórios");
+                    MessageBox.Show($"Preencha todos os campos obrigatórios", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
                     decimal valorServico = ValidarCamposServicoPecas()[0];
                     decimal valorPeca = ValidarCamposServicoPecas()[1];
                     CadastrarServico(lucro, valorPeca, valorServico);
-                    BancoGlobalStatico.idGlobalIdCliente++;
                     BancoGlobalStatico.idGlobalServicosAndamento++;
-                    BancoGlobalStatico.CarregarServicosAndamento();
-                    MessageBox.Show("Serviço Cadastrado");
+                    MessageBox.Show($"Serviço Cadastrado", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimparTelaCadastroServico();
                 }
             }

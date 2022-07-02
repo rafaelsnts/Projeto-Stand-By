@@ -22,7 +22,7 @@ namespace SistemaOS.Clientes
             CarregarTabelaCliente();
         }
 
-        public void CarregarTabelaCliente()
+        public DataTable CriarDataTable()
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
@@ -30,28 +30,29 @@ namespace SistemaOS.Clientes
             dt.Columns.Add("CPF");
             dt.Columns.Add("TELEFONE");
             dt.Columns.Add("TELEFONE RECADO");
+            return dt;
+        }
+
+        public void CarregarTabelaCliente()
+        {
+            DataTable dt = CriarDataTable();
 
             foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
-                dt.Rows.Add(cliente.sv_Id, cliente.sv_Nome, cliente.sv_Cpf, cliente.sv_Telefone,
-                    cliente.sv_Telefone_Recado);
+                dt.Rows.Add(cliente.cl_Id, cliente.cl_Nome, cliente.cl_Cpf, cliente.cl_Telefone,
+                    cliente.cl_Telefone_Recado);
             }
             grid_Clientes.DataSource = dt;
         }
 
-        public void CarregarTabelaPorBusca(List<ClienteEstrutura> _cliente)
+        public void CarregarTabelaPorBusca(List<ClienteEstrutura> _listClientes)
         {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("ID");
-            dt.Columns.Add("NOME");
-            dt.Columns.Add("CPF");
-            dt.Columns.Add("TELEFONE");
-            dt.Columns.Add("TELEFONE RECADO");
+            DataTable dt = CriarDataTable();
 
-            foreach (ClienteEstrutura cliente in _cliente)
+            foreach (ClienteEstrutura cliente in _listClientes)
             {
-                dt.Rows.Add(cliente.sv_Id, cliente.sv_Nome, cliente.sv_Cpf, cliente.sv_Telefone,
-                    cliente.sv_Telefone_Recado);
+                dt.Rows.Add(cliente.cl_Id, cliente.cl_Nome, cliente.cl_Cpf, cliente.cl_Telefone,
+                    cliente.cl_Telefone_Recado);
             }
             grid_Clientes.DataSource = dt;
         }
@@ -61,7 +62,7 @@ namespace SistemaOS.Clientes
             List<ClienteEstrutura> listaClienteEstrutura = new List<ClienteEstrutura>();
             foreach (ClienteEstrutura buscaCliente in BancoGlobalStatico.listBancoCliente)
             {
-                if (buscaCliente.sv_Nome.ToLower().Contains(txt_BuscarCliente.Text.ToLower()) || buscaCliente.sv_Cpf.ToLower().Contains(txt_BuscarCliente.Text.ToLower()))
+                if (buscaCliente.cl_Nome.ToLower().Contains(txt_BuscarCliente.Text.ToLower()) || buscaCliente.cl_Cpf.ToLower().Contains(txt_BuscarCliente.Text.ToLower()))
                 {
                     listaClienteEstrutura.Add(buscaCliente);
                 }
@@ -121,7 +122,7 @@ namespace SistemaOS.Clientes
 
                 foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
                 {
-                    if (idCliente == cliente.sv_Id.ToString())
+                    if (idCliente == cliente.cl_Id.ToString())
                     {
                         MessageBox.Show($"Tem certeza?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                         BancoGlobalStatico.listBancoCliente.Remove(cliente);

@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SistemaOS.Clientes;
+using SistemaOS.Financeiro;
 using SistemaOS.Serviços_em_Andamento;
+using SistemaOS.Banco_Global;
 
 namespace SistemaOS
 {
-    public partial class Form1 : Form
+    public partial class form_MenuPrincipal : Form
     {
-        public Form1()
+        public form_MenuPrincipal()
         {
             InitializeComponent();
         }
@@ -58,6 +60,12 @@ namespace SistemaOS
         private void btn_Clientes_Click(object sender, EventArgs e)
         {
             form_PanelClientes formulario = new form_PanelClientes();
+            formulario.ShowDialog();
+        }
+
+        private void btn_Financeiro_Click(object sender, EventArgs e)
+        {
+            form_PanelEstatisticas formulario = new form_PanelEstatisticas();
             formulario.ShowDialog();
         }
     }

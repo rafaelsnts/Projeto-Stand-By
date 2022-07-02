@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaOS.Garantia;
 
 namespace SistemaOS
 {
@@ -12,11 +13,12 @@ namespace SistemaOS
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //  Application.Run(new form_VerGarantia());
+            Application.Run(new form_MenuPrincipal());
         }
     }
 }

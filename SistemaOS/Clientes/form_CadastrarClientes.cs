@@ -16,6 +16,7 @@ namespace SistemaOS.Clientes
         public form_CadastrarClientes()
         {
             InitializeComponent();
+            BancoGlobalStatico.CarregarClientes();
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
@@ -38,14 +39,14 @@ namespace SistemaOS.Clientes
             {
                 if (txt_Nome.Text == "" || txt_Cpf.Text == "")
                 {
-                    MessageBox.Show("Preencha todos os campos Obrigatórios");
+                    MessageBox.Show($"Preencha todos os campos obrigatórios", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
                     BancoGlobalStatico.listBancoCliente.Add(new ClienteEstrutura(BancoGlobalStatico.idGlobalCliente, txt_Nome.Text, txt_Cpf.Text, txt_Telefone.Text, txt_TelefoneRecado.Text));
                     BancoGlobalStatico.idGlobalCliente++;
-                    BancoGlobalStatico.CarregarClientes();
-                    MessageBox.Show("Cliente Cadastrado");
+
+                    MessageBox.Show($"Cliente cadastrado com sucesso", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimparTelaCadastroCliente();
                 }
             }

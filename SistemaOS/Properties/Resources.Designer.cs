@@ -473,6 +473,16 @@ namespace SistemaOS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap money_bag_100px {
+            get {
+                object obj = ResourceManager.GetObject("money_bag_100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap money_box_20px {
             get {
                 object obj = ResourceManager.GetObject("money_box_20px", resourceCulture);
@@ -643,6 +653,16 @@ namespace SistemaOS.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search_50px {
+            get {
+                object obj = ResourceManager.GetObject("search_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_in_list_100px {
             get {
                 object obj = ResourceManager.GetObject("search_in_list_100px", resourceCulture);
@@ -706,6 +726,16 @@ namespace SistemaOS.Properties {
         internal static System.Drawing.Bitmap services_20px {
             get {
                 object obj = ResourceManager.GetObject("services_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistics_100px {
+            get {
+                object obj = ResourceManager.GetObject("statistics_100px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

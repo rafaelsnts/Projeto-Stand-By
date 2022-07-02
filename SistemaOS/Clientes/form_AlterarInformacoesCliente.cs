@@ -21,16 +21,16 @@ namespace SistemaOS.Clientes
             form_Clientes = _form_Clientes;
         }
 
-        private void btn_Salvar_Click(object sender, EventArgs e)
+        private void SalvarAlteracoes()
         {
             foreach (ClienteEstrutura alterar in BancoGlobalStatico.listBancoCliente)
             {
-                if (alterar.sv_Id == Convert.ToInt32(lbl_IdCliente.Text))
+                if (alterar.cl_Id == Convert.ToInt32(lbl_IdCliente.Text))
                 {
-                    alterar.sv_Nome = txt_Nome.Text;
-                    alterar.sv_Cpf = txt_Cpf.Text;
-                    alterar.sv_Telefone = txt_Telefone.Text;
-                    alterar.sv_Telefone_Recado = txt_TelefoneRecado.Text;
+                    alterar.cl_Nome = txt_Nome.Text;
+                    alterar.cl_Cpf = txt_Cpf.Text;
+                    alterar.cl_Telefone = txt_Telefone.Text;
+                    alterar.cl_Telefone_Recado = txt_TelefoneRecado.Text;
                     MessageBox.Show("Informações alteradas com Sucesso!", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     form_Clientes.CarregarTabelaCliente();
                     form_Clientes.grid_Clientes.ClearSelection();
@@ -38,6 +38,11 @@ namespace SistemaOS.Clientes
                     break;
                 }
             }
+        }
+
+        private void btn_Salvar_Click(object sender, EventArgs e)
+        {
+            SalvarAlteracoes();
         }
 
         private void btn_Sair_Click(object sender, EventArgs e)

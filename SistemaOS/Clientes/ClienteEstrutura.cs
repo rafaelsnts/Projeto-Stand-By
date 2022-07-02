@@ -8,19 +8,19 @@ namespace SistemaOS.Clientes
 {
     public class ClienteEstrutura
     {
-        public int sv_Id { get; set; }
-        public string sv_Nome { get; set; }
-        public string sv_Cpf { get; set; }
-        public string sv_Telefone { get; set; }
-        public string sv_Telefone_Recado { get; set; }
+        public int cl_Id { get; set; }
+        public string cl_Nome { get; set; }
+        public string cl_Cpf { get; set; }
+        public string cl_Telefone { get; set; }
+        public string cl_Telefone_Recado { get; set; }
 
-        public ClienteEstrutura(int _sv_id, string _sv_nome, string _sv_cpf, string _sv_telefone, string _sv_telefoneRecado)
+        public ClienteEstrutura(int clId, string clNome, string clCpf, string clTelefone, string clTelefoneRecado)
         {
-            sv_Id = _sv_id;
-            sv_Nome = _sv_nome;
-            sv_Cpf = _sv_cpf;
-            sv_Telefone = _sv_telefone;
-            sv_Telefone_Recado = _sv_telefoneRecado;
+            cl_Id = clId;
+            cl_Nome = clNome;
+            cl_Cpf = clCpf;
+            cl_Telefone = clTelefone;
+            cl_Telefone_Recado = clTelefoneRecado;
         }
     }
 }

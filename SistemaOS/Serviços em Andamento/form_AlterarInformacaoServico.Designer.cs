@@ -65,7 +65,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.lbl_Alterar = new System.Windows.Forms.Label();
+            this.lbl_IdServico = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -87,19 +87,26 @@
             this.txt_DataCadastro = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_Situacao = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txt_Aparelho = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lbl_IdCliente = new System.Windows.Forms.Label();
+            this.lbl_NomeCliente = new System.Windows.Forms.Label();
+            this.lbl_Telefone = new System.Windows.Forms.Label();
+            this.lbl_Cpf = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lbl_Alterar
+            // lbl_IdServico
             // 
-            this.lbl_Alterar.AutoSize = true;
-            this.lbl_Alterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Alterar.ForeColor = System.Drawing.Color.White;
-            this.lbl_Alterar.Location = new System.Drawing.Point(174, 15);
-            this.lbl_Alterar.Name = "lbl_Alterar";
-            this.lbl_Alterar.Size = new System.Drawing.Size(24, 25);
-            this.lbl_Alterar.TabIndex = 107;
-            this.lbl_Alterar.Text = "1";
-            this.lbl_Alterar.Visible = false;
+            this.lbl_IdServico.AutoSize = true;
+            this.lbl_IdServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_IdServico.ForeColor = System.Drawing.Color.White;
+            this.lbl_IdServico.Location = new System.Drawing.Point(594, 63);
+            this.lbl_IdServico.Name = "lbl_IdServico";
+            this.lbl_IdServico.Size = new System.Drawing.Size(42, 25);
+            this.lbl_IdServico.TabIndex = 107;
+            this.lbl_IdServico.Text = "OK";
+            this.lbl_IdServico.Visible = false;
             // 
             // label10
             // 
@@ -107,7 +114,7 @@
             this.label10.ForeColor = System.Drawing.Color.Gainsboro;
             this.label10.Image = global::SistemaOS.Properties.Resources.services_20px;
             this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(335, 15);
+            this.label10.Location = new System.Drawing.Point(329, 114);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 37);
@@ -121,7 +128,7 @@
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
             this.label9.Image = global::SistemaOS.Properties.Resources.service1_20px;
             this.label9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Location = new System.Drawing.Point(335, 285);
+            this.label9.Location = new System.Drawing.Point(329, 384);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(145, 37);
@@ -135,7 +142,7 @@
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
             this.label8.Image = global::SistemaOS.Properties.Resources.money1_20px;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(335, 194);
+            this.label8.Location = new System.Drawing.Point(329, 293);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(152, 37);
@@ -149,7 +156,7 @@
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
             this.label7.Image = global::SistemaOS.Properties.Resources.money_box_20px1;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(335, 104);
+            this.label7.Location = new System.Drawing.Point(329, 203);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(175, 37);
@@ -163,7 +170,7 @@
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Image = global::SistemaOS.Properties.Resources.calendar_20px;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(13, 370);
+            this.label2.Location = new System.Drawing.Point(7, 469);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(183, 37);
@@ -177,7 +184,7 @@
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
             this.label6.Image = global::SistemaOS.Properties.Resources.android_tablet_20px;
             this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(13, 284);
+            this.label6.Location = new System.Drawing.Point(7, 383);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(124, 38);
@@ -191,7 +198,7 @@
             this.label5.ForeColor = System.Drawing.Color.Gainsboro;
             this.label5.Image = global::SistemaOS.Properties.Resources.password_20px;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Location = new System.Drawing.Point(10, 194);
+            this.label5.Location = new System.Drawing.Point(4, 293);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 37);
@@ -205,7 +212,7 @@
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Image = global::SistemaOS.Properties.Resources.high_priority_20px;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Location = new System.Drawing.Point(10, 103);
+            this.label4.Location = new System.Drawing.Point(4, 202);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 37);
@@ -219,7 +226,7 @@
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
             this.label3.Image = global::SistemaOS.Properties.Resources.mobile_20px1;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(10, 15);
+            this.label3.Location = new System.Drawing.Point(4, 114);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 37);
@@ -264,7 +271,7 @@
             this.txt_Senha.IconRight = null;
             this.txt_Senha.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Senha.Lines = new string[0];
-            this.txt_Senha.Location = new System.Drawing.Point(13, 235);
+            this.txt_Senha.Location = new System.Drawing.Point(7, 334);
             this.txt_Senha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Senha.MaxLength = 32767;
             this.txt_Senha.MinimumSize = new System.Drawing.Size(1, 1);
@@ -340,7 +347,7 @@
             this.txt_Defeito.IconRight = null;
             this.txt_Defeito.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Defeito.Lines = new string[0];
-            this.txt_Defeito.Location = new System.Drawing.Point(13, 144);
+            this.txt_Defeito.Location = new System.Drawing.Point(7, 243);
             this.txt_Defeito.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Defeito.MaxLength = 32767;
             this.txt_Defeito.MinimumSize = new System.Drawing.Size(1, 1);
@@ -396,7 +403,7 @@
             this.btn_Concluido.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Concluido.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Concluido.Image = global::SistemaOS.Properties.Resources.task_completed_100px1;
-            this.btn_Concluido.Location = new System.Drawing.Point(517, 369);
+            this.btn_Concluido.Location = new System.Drawing.Point(526, 471);
             this.btn_Concluido.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Concluido.Name = "btn_Concluido";
             this.btn_Concluido.Size = new System.Drawing.Size(106, 126);
@@ -413,7 +420,7 @@
             this.btn_Salvar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Salvar.ForeColor = System.Drawing.Color.Gainsboro;
             this.btn_Salvar.Image = global::SistemaOS.Properties.Resources.save_100px;
-            this.btn_Salvar.Location = new System.Drawing.Point(374, 369);
+            this.btn_Salvar.Location = new System.Drawing.Point(334, 469);
             this.btn_Salvar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Salvar.Name = "btn_Salvar";
             this.btn_Salvar.Size = new System.Drawing.Size(106, 126);
@@ -450,7 +457,7 @@
             this.txt_ServicoFeito.IconRight = null;
             this.txt_ServicoFeito.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_ServicoFeito.Lines = new string[0];
-            this.txt_ServicoFeito.Location = new System.Drawing.Point(338, 326);
+            this.txt_ServicoFeito.Location = new System.Drawing.Point(332, 425);
             this.txt_ServicoFeito.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ServicoFeito.MaxLength = 32767;
             this.txt_ServicoFeito.MinimumSize = new System.Drawing.Size(1, 1);
@@ -526,7 +533,7 @@
             this.txt_ValorDaPeca.IconRight = null;
             this.txt_ValorDaPeca.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_ValorDaPeca.Lines = new string[0];
-            this.txt_ValorDaPeca.Location = new System.Drawing.Point(338, 235);
+            this.txt_ValorDaPeca.Location = new System.Drawing.Point(332, 334);
             this.txt_ValorDaPeca.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ValorDaPeca.MaxLength = 32767;
             this.txt_ValorDaPeca.MinimumSize = new System.Drawing.Size(1, 1);
@@ -602,7 +609,7 @@
             this.txt_ValorServico.IconRight = null;
             this.txt_ValorServico.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_ValorServico.Lines = new string[0];
-            this.txt_ValorServico.Location = new System.Drawing.Point(338, 145);
+            this.txt_ValorServico.Location = new System.Drawing.Point(332, 244);
             this.txt_ValorServico.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ValorServico.MaxLength = 32767;
             this.txt_ValorServico.MinimumSize = new System.Drawing.Size(1, 1);
@@ -678,7 +685,7 @@
             this.txt_Acessorios.IconRight = null;
             this.txt_Acessorios.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Acessorios.Lines = new string[0];
-            this.txt_Acessorios.Location = new System.Drawing.Point(16, 326);
+            this.txt_Acessorios.Location = new System.Drawing.Point(10, 425);
             this.txt_Acessorios.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Acessorios.MaxLength = 32767;
             this.txt_Acessorios.MinimumSize = new System.Drawing.Size(1, 1);
@@ -754,7 +761,7 @@
             this.txt_DataCadastro.IconRight = null;
             this.txt_DataCadastro.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_DataCadastro.Lines = new string[0];
-            this.txt_DataCadastro.Location = new System.Drawing.Point(16, 411);
+            this.txt_DataCadastro.Location = new System.Drawing.Point(10, 510);
             this.txt_DataCadastro.Margin = new System.Windows.Forms.Padding(4);
             this.txt_DataCadastro.MaxLength = 10;
             this.txt_DataCadastro.MinimumSize = new System.Drawing.Size(1, 1);
@@ -830,7 +837,7 @@
             this.txt_Situacao.IconRight = null;
             this.txt_Situacao.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Situacao.Lines = new string[0];
-            this.txt_Situacao.Location = new System.Drawing.Point(338, 56);
+            this.txt_Situacao.Location = new System.Drawing.Point(332, 155);
             this.txt_Situacao.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Situacao.MaxLength = 32767;
             this.txt_Situacao.MinimumSize = new System.Drawing.Size(1, 1);
@@ -906,7 +913,7 @@
             this.txt_Aparelho.IconRight = null;
             this.txt_Aparelho.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Aparelho.Lines = new string[0];
-            this.txt_Aparelho.Location = new System.Drawing.Point(13, 56);
+            this.txt_Aparelho.Location = new System.Drawing.Point(7, 155);
             this.txt_Aparelho.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Aparelho.MaxLength = 32767;
             this.txt_Aparelho.MinimumSize = new System.Drawing.Size(1, 1);
@@ -955,13 +962,110 @@
             this.txt_Aparelho.WordWrap = true;
             this.txt_Aparelho.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Aparelho_KeyPress);
             // 
+            // lbl_IdCliente
+            // 
+            this.lbl_IdCliente.AutoSize = true;
+            this.lbl_IdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_IdCliente.ForeColor = System.Drawing.Color.White;
+            this.lbl_IdCliente.Location = new System.Drawing.Point(594, 88);
+            this.lbl_IdCliente.Name = "lbl_IdCliente";
+            this.lbl_IdCliente.Size = new System.Drawing.Size(42, 25);
+            this.lbl_IdCliente.TabIndex = 108;
+            this.lbl_IdCliente.Text = "OK";
+            this.lbl_IdCliente.Visible = false;
+            // 
+            // lbl_NomeCliente
+            // 
+            this.lbl_NomeCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_NomeCliente.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_NomeCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_NomeCliente.Location = new System.Drawing.Point(94, 4);
+            this.lbl_NomeCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_NomeCliente.Name = "lbl_NomeCliente";
+            this.lbl_NomeCliente.Size = new System.Drawing.Size(370, 37);
+            this.lbl_NomeCliente.TabIndex = 109;
+            this.lbl_NomeCliente.Text = "______________";
+            this.lbl_NomeCliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_Telefone
+            // 
+            this.lbl_Telefone.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_Telefone.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_Telefone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Telefone.Location = new System.Drawing.Point(103, 35);
+            this.lbl_Telefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Telefone.Name = "lbl_Telefone";
+            this.lbl_Telefone.Size = new System.Drawing.Size(340, 37);
+            this.lbl_Telefone.TabIndex = 110;
+            this.lbl_Telefone.Text = "______________";
+            this.lbl_Telefone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_Cpf
+            // 
+            this.lbl_Cpf.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_Cpf.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbl_Cpf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Cpf.Location = new System.Drawing.Point(55, 66);
+            this.lbl_Cpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Cpf.Name = "lbl_Cpf";
+            this.lbl_Cpf.Size = new System.Drawing.Size(389, 37);
+            this.lbl_Cpf.TabIndex = 111;
+            this.lbl_Cpf.Text = "________________";
+            this.lbl_Cpf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Location = new System.Drawing.Point(3, 4);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 37);
+            this.label11.TabIndex = 112;
+            this.label11.Text = "CLIENTE:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label12.Location = new System.Drawing.Point(3, 35);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 37);
+            this.label12.TabIndex = 113;
+            this.label12.Text = "TELEFONE:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label13.Location = new System.Drawing.Point(3, 66);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(48, 37);
+            this.label13.TabIndex = 114;
+            this.label13.Text = "CPF:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // form_AlterarInformacaoServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(27)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(668, 498);
-            this.Controls.Add(this.lbl_Alterar);
+            this.ClientSize = new System.Drawing.Size(648, 610);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lbl_Cpf);
+            this.Controls.Add(this.lbl_Telefone);
+            this.Controls.Add(this.lbl_NomeCliente);
+            this.Controls.Add(this.lbl_IdCliente);
+            this.Controls.Add(this.lbl_IdServico);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -987,6 +1091,7 @@
             this.Name = "form_AlterarInformacaoServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "form_AlterarInformacaoServico";
+            this.Load += new System.EventHandler(this.form_AlterarInformacaoServico_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1014,7 +1119,14 @@
         public Bunifu.UI.WinForms.BunifuTextBox txt_Acessorios;
         public Bunifu.UI.WinForms.BunifuTextBox txt_DataCadastro;
         public Bunifu.UI.WinForms.BunifuTextBox txt_Situacao;
-        public System.Windows.Forms.Label lbl_Alterar;
+        public System.Windows.Forms.Label lbl_IdServico;
         public System.Windows.Forms.Button btn_Concluido;
+        public System.Windows.Forms.Label lbl_IdCliente;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label lbl_NomeCliente;
+        public System.Windows.Forms.Label lbl_Telefone;
+        public System.Windows.Forms.Label lbl_Cpf;
     }
 }

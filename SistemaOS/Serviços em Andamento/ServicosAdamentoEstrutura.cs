@@ -25,7 +25,7 @@ namespace SistemaOS.Serviços_em_Andamento
 
         public ServicosAdamentoEstrutura(int _sv_Id, int _sv_fk_cl_idCliente, string _sv_Aparelho, string _sv_Defeito,
             string _sv_Senha, string _sv_Situacao, string _sv_Acessorios, DateTime _sv_DataCadastro,
-            DateTime _sv_dataConclusao, decimal _sv_valorServico, decimal _sv_valorPeca, decimal _sv_lucroServico, string _sv_servicoFeito, int _sv_Status)
+             decimal _sv_valorServico, decimal _sv_valorPeca, decimal _sv_lucroServico, string _sv_servicoFeito, int _sv_Status)
         {
             sv_Id = _sv_Id;
             sv_fk_cl_idCliente = _sv_fk_cl_idCliente;
@@ -35,7 +35,6 @@ namespace SistemaOS.Serviços_em_Andamento
             sv_Situacao = _sv_Situacao;
             sv_Acessorios = _sv_Acessorios;
             sv_dataCadastro = DateTime.Now.Date;
-            sv_dataConclusao = _sv_dataConclusao;
             sv_valorServico = _sv_valorServico;
             sv_valorPeca = _sv_valorPeca;
             sv_lucroServico = _sv_lucroServico;

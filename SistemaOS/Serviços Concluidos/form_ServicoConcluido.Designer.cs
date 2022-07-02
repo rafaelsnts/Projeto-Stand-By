@@ -122,27 +122,28 @@
             this.nãoConcluidoToolStripMenuItem,
             this.exibirGarantiaToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(155, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // nãoConcluidoToolStripMenuItem
             // 
             this.nãoConcluidoToolStripMenuItem.Name = "nãoConcluidoToolStripMenuItem";
-            this.nãoConcluidoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.nãoConcluidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nãoConcluidoToolStripMenuItem.Text = "Não Concluido";
             this.nãoConcluidoToolStripMenuItem.Click += new System.EventHandler(this.nãoConcluidoToolStripMenuItem_Click);
             // 
             // exibirGarantiaToolStripMenuItem
             // 
             this.exibirGarantiaToolStripMenuItem.Name = "exibirGarantiaToolStripMenuItem";
-            this.exibirGarantiaToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.exibirGarantiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exibirGarantiaToolStripMenuItem.Text = "Exibir Garantia";
+            this.exibirGarantiaToolStripMenuItem.Click += new System.EventHandler(this.exibirGarantiaToolStripMenuItem_Click);
             // 
             // btn_Buscar
             // 

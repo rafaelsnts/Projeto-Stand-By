@@ -33,7 +33,6 @@ E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.Assembl
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.csproj.SuggestedBindingRedirects.cache
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.exe.config
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_PanelClientes.resources
-E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Form1.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Properties.Resources.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_CadastrarServico.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_ServicoAndamento.resources
@@ -51,3 +50,11 @@ E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Clientes.form_
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_Concluidos.form_ServicoConcluido.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Serviços_em_Andamento.form_PanelServicos.resources
 E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Garantia.form_Garantia.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Garantia.form_VerGarantia.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.form_MenuPrincipal.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Financeiro.form_Lucro.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Financeiro.form_LucrosGastos.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Financeiro.form_Prejuizo.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Financeiro.form_Estatisticas.resources
+E:\@ProjetosCSharp\Projeto-Stand-By\SistemaOS\obj\Debug\SistemaOS.Financeiro.form_PanelEstatisticas.resources

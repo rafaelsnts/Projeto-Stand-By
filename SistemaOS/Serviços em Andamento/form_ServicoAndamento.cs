@@ -29,16 +29,16 @@ namespace SistemaOS.Serviços_em_Andamento
         {
             foreach (ClienteEstrutura cliente in BancoGlobalStatico.listBancoCliente)
             {
-                if (cliente.sv_Id == id)
+                if (cliente.cl_Id == id)
                 {
-                    return cliente.sv_Nome;
+                    return cliente.cl_Nome;
                 }
             }
 
             return "";
         }
 
-        public void CarregarTabelaServicosAndamento()
+        public DataTable CriarDataTable()
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("ID");
@@ -55,7 +55,12 @@ namespace SistemaOS.Serviços_em_Andamento
             dt.Columns.Add("R$ LUCRO");
             dt.Columns.Add("SERVIÇO");
             dt.Columns.Add("STATUS");
+            return dt;
+        }
 
+        public void CarregarTabelaServicosAndamento()
+        {
+            DataTable dt = CriarDataTable();
             foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.listBancoServicosAndamento)
             {
                 if (servicoAndamento.sv_Status == 1)
@@ -74,21 +79,7 @@ namespace SistemaOS.Serviços_em_Andamento
 
         public void CarregarTabelaPorBusca(List<ServicosAdamentoEstrutura> _servicosAndamento)
         {
-            DataTable dt = new DataTable();
-            dt.Columns.Add("ID");
-            dt.Columns.Add("ID CLIENTE");
-            dt.Columns.Add("APARELHO");
-            dt.Columns.Add("DEFEITO");
-            dt.Columns.Add("SENHA");
-            dt.Columns.Add("SITUAÇÃO");
-            dt.Columns.Add("ACESSORIOS");
-            dt.Columns.Add("DATA DE CADASTRO");
-            dt.Columns.Add("VALOR DO SERVIÇO");
-            dt.Columns.Add("DATA DE CONCLUSÃO");
-            dt.Columns.Add("VALOR DA PEÇA");
-            dt.Columns.Add("LUCRO SERVIÇO");
-            dt.Columns.Add("SERVIÇO FEITO");
-            dt.Columns.Add("STATUS");
+            DataTable dt = CriarDataTable();
 
             foreach (ServicosAdamentoEstrutura servicoAndamento in _servicosAndamento)
             {
@@ -137,7 +128,10 @@ namespace SistemaOS.Serviços_em_Andamento
         private void AlterarInformacaoServico()
         {
             form_AlterarInformacaoServico formulario = new form_AlterarInformacaoServico(this);
-            formulario.lbl_Alterar.Text = grid_ServicoAndamento.SelectedCells[0].Value.ToString();
+
+            formulario.lbl_NomeCliente.Text = grid_ServicoAndamento.SelectedCells[1].Value.ToString();
+            formulario.lbl_IdServico.Text = grid_ServicoAndamento.SelectedCells[0].Value.ToString();
+            formulario.lbl_IdCliente.Text = grid_ServicoAndamento.SelectedCells[1].Value.ToString();
             formulario.txt_Aparelho.Text = grid_ServicoAndamento.SelectedCells[2].Value.ToString();
             formulario.txt_Situacao.Text = grid_ServicoAndamento.SelectedCells[5].Value.ToString();
             formulario.txt_Defeito.Text = grid_ServicoAndamento.SelectedCells[3].Value.ToString();
@@ -165,16 +159,16 @@ namespace SistemaOS.Serviços_em_Andamento
 
         private void deletarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int linhaSelecionada = grid_ServicoAndamento.SelectedRows.Count;
-            if (linhaSelecionada == 0)
+            int qtdLinhasSelecionadas = grid_ServicoAndamento.SelectedRows.Count;
+            if (qtdLinhasSelecionadas == 0)
             {
                 MessageBox.Show($"Selecione uma linha", "ATENÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            string excluirServicoAndamento = grid_ServicoAndamento.SelectedCells[2].Value.ToString();
+            string excluirServicoAndamento = grid_ServicoAndamento.SelectedCells[0].Value.ToString();
             foreach (ServicosAdamentoEstrutura servicoAndamento in BancoGlobalStatico.listBancoServicosAndamento)
             {
-                if (excluirServicoAndamento == servicoAndamento.sv_Aparelho)
+                if (excluirServicoAndamento == servicoAndamento.sv_Id.ToString())
                 {
                     if (MessageBox.Show("Tem certeza?", "CERTEZA", MessageBoxButtons.YesNo,
                             MessageBoxIcon.Question) == DialogResult.Yes)

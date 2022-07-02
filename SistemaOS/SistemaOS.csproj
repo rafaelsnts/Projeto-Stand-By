@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_WinForms_4.1.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>C:\Users\Rafael Santos\Downloads\Bunifu_UI_WinForms_4.1.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_WinForms_4.1.1\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
     </Reference>
@@ -101,11 +104,47 @@
     <Compile Include="Clientes\form_PanelClientes.Designer.cs">
       <DependentUpon>form_PanelClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estatísticas\form_Estatisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatísticas\form_Estatisticas.Designer.cs">
+      <DependentUpon>form_Estatisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatísticas\form_Lucro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatísticas\form_Lucro.Designer.cs">
+      <DependentUpon>form_Lucro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatísticas\form_LucrosGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatísticas\form_LucrosGastos.Designer.cs">
+      <DependentUpon>form_LucrosGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatísticas\form_PanelEstatisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatísticas\form_PanelEstatisticas.Designer.cs">
+      <DependentUpon>form_PanelEstatisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estatísticas\form_Prejuizo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatísticas\form_Prejuizo.Designer.cs">
+      <DependentUpon>form_Prejuizo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Garantia\form_Garantia.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Garantia\form_Garantia.Designer.cs">
       <DependentUpon>form_Garantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Garantia\form_VerGarantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Garantia\form_VerGarantia.Designer.cs">
+      <DependentUpon>form_VerGarantia.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu Principal\form_MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -166,8 +205,26 @@
     <EmbeddedResource Include="Clientes\form_PanelClientes.resx">
       <DependentUpon>form_PanelClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estatísticas\form_Estatisticas.resx">
+      <DependentUpon>form_Estatisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatísticas\form_Lucro.resx">
+      <DependentUpon>form_Lucro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatísticas\form_LucrosGastos.resx">
+      <DependentUpon>form_LucrosGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatísticas\form_PanelEstatisticas.resx">
+      <DependentUpon>form_PanelEstatisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatísticas\form_Prejuizo.resx">
+      <DependentUpon>form_Prejuizo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Garantia\form_Garantia.resx">
       <DependentUpon>form_Garantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Garantia\form_VerGarantia.resx">
+      <DependentUpon>form_VerGarantia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Principal\form_MenuPrincipal.resx">
       <DependentUpon>form_MenuPrincipal.cs</DependentUpon>
@@ -420,6 +477,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\guarantee_100px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_bag_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

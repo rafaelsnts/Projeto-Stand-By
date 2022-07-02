@@ -14,7 +14,7 @@ namespace SistemaOS.Garantia
         public DateTime gar_data_Inicial { get; set; }
         public DateTime gar_data_Final { get; set; }
 
-        public GarantiaEstrutura(int _gar_Id, int _gar_fk_idServico, int _gar_fk_idCliente, DateTime _gar_data_Inicial,
+        public GarantiaEstrutura(int _gar_Id, int _gar_fk_idServico, int _gar_fk_idCliente,
             DateTime _gar_data_Final)
         {
             gar_Id = _gar_Id;

@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txt_QtdGarantia.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGsAAAAlCAYAAABF7RcQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACPSURBVGhD7dGxCQMxAARB9V+VHpXhMlyAH4ESd6CFWbjk
-        0hmKtdb6zDl/due2z6EaYx+6t+1zqGDdHqxQsELBCgUrFKxQsELBCgUrFKxQsELBCgUrFKxQsELBCgUr
-        FKxQsELBCgUrFKxQsELBCgUrFKxQsELBCgUrFKxQsELBCvWH9TzPdx9257bPoVKjMV78A2nR14kE2QAA
-        AABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAMAAAAAqCAYAAADlA1TjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACrSURBVHhe7dMxDQQxEARB80dlyzAexgG4kyUnj6GrpE02
+        nh6Qt/f+zTlf5yp3Nn/nP8Z5QMnZ/J2/AOgRAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+        JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+        tL8A1lrPeThXubP5O3+oGuMDGaj/HXQWcAAAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
